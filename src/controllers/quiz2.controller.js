@@ -10,10 +10,18 @@ router.post('',async(req,res)=>{
     }
 });
 
-router.get('/:id',async(req, res)=>{
+router.get('/',async(req, res)=>{
     try {
         const quiz2_data = await Quiz2.findById(req.params.id).populate('quiz1_id');
-        return res.status(200).send(quiz2_data);
+        return res.render("quizzes/quiz2")
+    } catch (err) {
+        return res.status(500).send(err.message);
+    }
+});
+
+router.get('/subscription',async(req, res)=>{
+    try {
+        return res.render("quizzes/subscription")
     } catch (err) {
         return res.status(500).send(err.message);
     }

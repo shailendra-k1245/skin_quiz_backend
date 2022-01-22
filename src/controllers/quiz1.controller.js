@@ -11,13 +11,13 @@ router.post('',async(req,res) => {
     }  
 });
 
-router.get('/:id',async(req, res)=>{
+router.get('/',async(req, res)=>{
     try {
         const quiz1_data = await Quiz1.findById(req.params.id).lean().exec();
-        return res.status(200).send(quiz1_data);
+         return res.render("quizzes/quiz1")
+        // return res.status(200).send(quiz1_data);
     } catch (err) {
         return res.status(500).send(err.message);
     }
 })
-
     module.exports = router;
