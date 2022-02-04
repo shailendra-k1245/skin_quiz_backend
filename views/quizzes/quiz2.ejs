@@ -1,92 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Spots</title>
-    <link rel="stylesheet" href="/css/users/dark_spots_style.css">
-   
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Quiz</title>
+    <link rel="stylesheet" href="/css/quizzes/dark_spots_style.css" />
+  </head>
+  <body>
     <div id="container">
+      <img
+        src="/css/quizzes/images/vedix_logo.PNG"
+        alt=""
+        id="logo"
+        onclick='window.location.href="/"'
+      />
 
-        <img src="/css/users/vedix_logo.PNG" alt="" id="logo">
+      <img src="/css/quizzes/images/quiz2.PNG" alt="" id="quiz" />
 
-        <img src="/css/users/quiz2.PNG" alt="" id="quiz">
+      <h2>Skin Profile</h2>
 
-        <h2>Skin Profile</h2>
+      <div class="center_text">
+        How Would You Describe Your Dark Patches On Your Skin?
+      </div>
 
-        <div class='center_text'>How Would You Describe Your Dark Patches On Your Skin?</div>
-
-       
-
-        <div id="skin_patches_container">
-            
-            <div onclick='getSize("smaller",this)' class='sizediv'>A few, small-sized</div>
-            <div onclick='getSize("small",this)' class='sizediv'>Few Coin sized patches on the skin</div>
-            <div onclick='getSize("medium",this)' class='sizediv'>1-2 Big patches</div>
-            <div onclick='getSize("large",this)' class='sizediv'>Across the face</div>
-
+      <div id="skin_patches_container">
+        <div onclick='getSize("smaller",this)' class="sizediv">
+          A few, small-sized
         </div>
-
-        <hr>
-
-        <div class='center_text'>How Long Has The Skin Patch Existed?</div>
-
-        <div id="time_container">
-
-            <div onclick='getTime("1 Month",this)' class='timediv'>Since 1-2 months</div>
-            <div onclick='getTime("6 Month",this)' class='timediv'>More than 6 months</div>
-            <div onclick='getTime("12 Month",this)' class='timediv' >Since more than a year</div>
-            <div onclick='getTime("Birthmark",this)' class='timediv'>It’s a birthmark</div>
-
-
-
+        <div onclick='getSize("small",this)' class="sizediv">
+          Few Coin sized patches on the skin
         </div>
-
-        <hr>
-
-        <div class='center_text'>What Is Your Skin Type?</div>
-
-        <div id="skin_type_container">
-
-            <div onclick='getSkinType("Dry",this)' class='typediv'>Dry</div>
-            <div onclick='getSkinType("Oily",this)' class='typediv'>Oily</div>
-            <div onclick='getSkinType("Normal",this)' class='typediv'>Normal</div>
-            <div onclick='getSkinType("Sensitive",this)' class='typediv'>Sensitive to light and products</div>
-
-
-
+        <div onclick='getSize("medium",this)' class="sizediv">
+          1-2 Big patches
         </div>
-
-        <hr>
-
-        <div class='center_text'>What Does Your Skin Usually Feel Like At Midday?</div>
-
-        <div id="skin_feel_container">
-
-            <div onclick='getSkinFeel("Fresh",this)' class='feeldiv'>Fresh and well hydrated</div>
-            <div onclick='getSkinFeel("Smooth",this)' class='feeldiv'>Smooth and bright</div>
-            <div onclick='getSkinFeel("Rough",this)' class='feeldiv'>Neither smooth nor rough</div>
-            <div onclick='getSkinFeel("Rough",this)' class='feeldiv'>Rough and dull</div>
-
-
+        <div onclick='getSize("large",this)' class="sizediv">
+          Across the face
         </div>
+      </div>
 
+      <hr />
 
-        <div id="buttons_container">
+      <div class="center_text">How Long Has The Skin Patch Existed?</div>
 
-
-            <div id="back" onclick="window.location.href = '/quiz1'">PREVIOUS</div>
-            <div id="continue" onclick="getData()">COMPLETE</div>
-
-
-
+      <div id="time_container">
+        <div onclick='getTime("1 Month",this)' class="timediv">
+          Since 1-2 months
         </div>
+        <div onclick='getTime("6 Month",this)' class="timediv">
+          More than 6 months
+        </div>
+        <div onclick='getTime("12 Month",this)' class="timediv">
+          Since more than a year
+        </div>
+        <div onclick='getTime("Birthmark",this)' class="timediv">
+          It’s a birthmark
+        </div>
+      </div>
 
+      <hr />
 
+      <div class="center_text">What Is Your Skin Type?</div>
+
+      <div id="skin_type_container">
+        <div onclick='getSkinType("Dry",this)' class="typediv">Dry</div>
+        <div onclick='getSkinType("Oily",this)' class="typediv">Oily</div>
+        <div onclick='getSkinType("Normal",this)' class="typediv">Normal</div>
+        <div onclick='getSkinType("Sensitive",this)' class="typediv">
+          Sensitive to light and products
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="center_text">
+        What Does Your Skin Usually Feel Like At Midday?
+      </div>
+
+      <div id="skin_feel_container">
+        <div onclick='getSkinFeel("Fresh",this)' class="feeldiv">
+          Fresh and well hydrated
+        </div>
+        <div onclick='getSkinFeel("Smooth",this)' class="feeldiv">
+          Smooth and bright
+        </div>
+        <div onclick='getSkinFeel("Rough",this)' class="feeldiv">
+          Neither smooth nor rough
+        </div>
+        <div onclick='getSkinFeel("Rough",this)' class="feeldiv">
+          Rough and dull
+        </div>
+      </div>
+
+      <div id="buttons_container">
+        <div id="back" onclick="window.location.href = '/quiz1'">PREVIOUS</div>
+        <div id="continue" onclick="getData()">COMPLETE</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-<script src="/js/users/spots_script.js"></script>
+<script src="/js/quizzes/spots_script.js"></script>

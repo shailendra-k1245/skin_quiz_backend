@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/checkout/checkout.css" />
+    <title>Information - Vedix - Checkout</title>
+  </head>
+  <body>
+    <body>
+      <div id="container">
+        <img src="/css/checkout/images/vedix_logo.svg" alt=""
+        onclick='window.open("/")' />
+        <h3>
+          Contact Information
+        </h3>
+        <input type="text" placeholder="Email" />
+        <h3>
+          Shipping Address
+        </h3>
+        <select name="">
+          <option value="">Country/Region</option>
+          <option value="India">India</option>
+          <option value="Australia">Australia</option>
+          <option value="Japan">Japan</option>
+        </select>
+        <br />
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <br />
+        <input type="text" placeholder="Address" />
+        <br />
+        <input type="text" placeholder="Apartement, suite, etc. (optional)" />
+        <input type="text" placeholder="City" />
+        <input type="text" placeholder="State" />
+        <input type="number" placeholder="Pincode" />
+        <br />
+        <input type="number" placeholder="Phone" />
+        <br />
+        <input type="checkbox" id="save_info" />
+        <label for="save_info"> Save this information for next time</label>
+        <h3>
+          Payment Details
+        </h3>
+        <label for="card_no">Card number :-</label>
+        <input type="number" id="card_no" placeholder="1234567812345678" />
+        <br />
+        <label for="cvv">CVV :-</label>
+        <input type="number" id="cvv" placeholder="123" />
+        <br />
+        <label for="expiry">Expiration date :-</label>
+        <input type="text" id="expiry" placeholder="07/2010" />
+        <br />
+        <label for="pincode">Pincode :-</label>
+        <input type="number" id="pincode" placeholder="123456" />
+        <br />
+        <a onclick="alert('Sucess')" href="/"><input type="button" id="pay" value="Pay Now"/></a>
+        <br />
+        <a href="./cart" id="return">Return to cart</a>
+        <p>All rights reserved Vedix</p>
+      </div>
+    </body>
+  </body>
+</html>

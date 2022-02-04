@@ -1,0 +1,122 @@
+* {
+    font-family: verdana;
+  }
+  #container {
+    width: 800px;
+    height: 950px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  #container :nth-child(3) {
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 650px;
+  }
+  #container :nth-child(5) {
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+  }
+  #container :nth-child(7) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 314.5px;
+  }
+  #container :nth-child(8) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 314.5px;
+  }
+  #container :nth-child(10) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 650px;
+  }
+  #container :nth-child(12) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 650px;
+  }
+  #container :nth-child(13) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 202px;
+  }
+  #container :nth-child(14) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 202px;
+  }
+  #container :nth-child(15) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 202px;
+  }
+  #container :nth-child(17) {
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 650px;
+  }
+  #save_info {
+    margin-top: 20px;
+  }
+  #card_no {
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+  }
+  #cvv {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  #expiry {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 20px;
+  }
+  #pincode {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  #pay {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e78471;
+    color: white;
+    margin-left: 300px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  #return {
+    margin-left: 345px;
+    text-decoration: none;
+    color: #e78471;
+  }
+  

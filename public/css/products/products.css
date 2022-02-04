@@ -1,0 +1,238 @@
+body {
+  font-family: Montserrat;
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+  }
+  .brand-icon {
+    flex: 1;
+  }
+  #filterSection {
+    display: flex;
+    justify-content: space-around;
+    flex: 2.8;
+  }
+  .brand-icon > img {
+    width: 60px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  #filterSection > div {
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 1px;
+  }
+  #filterSection > div:hover {
+    border: 1px solid #e78471;
+    border: 1px solid red;
+  }
+  .cart-log-icons {
+    width: 8%;
+    height: 50%;
+    padding: 7px;
+    padding-right: 5px;
+  }
+  .nav {
+    justify-content: space-around;
+    width: auto;
+    height: 45%;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  #filterSection > .nav > div {
+    padding: 5px;
+    background-color: white;
+    color: black;
+  }
+  #all-products {
+    margin-left: 30px;
+  }
+
+  .top-banner {
+    width: 85%;
+    height: 120px;
+    margin: auto;
+  }
+  .top-banner > img {
+    width: 100%;
+    height: 80%;
+  }
+  #container {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 0px 10px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #container > div {
+    height: 350px;
+    margin-top: 10px;
+    border: 1px solid #d1cfcf;
+  }
+  #container > div > img {
+    width: 100%;
+    height: 45%;
+  }
+  .content-div {
+    width: 100%;
+    height: 20%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .prices-div {
+    display: flex;
+    height: 10%;
+    justify-content: space-around;
+    vertical-align: top;
+    line-height: 2px;
+    font-weight: bold;
+  }
+  .old-price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+  .rating {
+    display: flex;
+    justify-content: center;
+    color: #e29c2b;
+    line-height: 1px;
+  }
+  #add-cart {
+    width: 85%;
+    height: 7%;
+    border: 1px solid black;
+    background-color: #e78471;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+    margin: auto;
+    margin-top: 20px;
+    height: 50px;
+  }
+  .brand-icon {
+    flex: 2;
+  }
+  #filterSection {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+  }
+  .brand-icon > img {
+    padding: 10px;
+    margin-left: 20px;
+  }
+  #filterSection > div {
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 1px;
+  }
+  #filterSection > div:hover {
+    border: 1px solid #e78471;
+  }
+  .cart-log-icons {
+    width: 8%;
+    height: 50%;
+    padding: 7px;
+    padding-right: 5px;
+  }
+  .nav {
+    justify-content: space-around;
+    width: 135px;
+    height: 45%;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #filterSection > .nav > div {
+    padding: 7px;
+    background-color: white;
+    color: black;
+  }
+  .top-banner {
+    width: 82%;
+    height: 150px;
+    margin: auto;
+  }
+  #all-products {
+    margin-left: 30px;
+  }
+  .top-banner > img {
+    width: 100%;
+    height: 150px;
+  }
+  #container {
+    width: 98%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 16%);
+    grid-gap: 0px 10px;
+    justify-content: center;
+  }
+  #container > div {
+    height: 350px;
+    margin-top: 10px;
+    border: 1px solid #d1cfcf;
+  }
+  #container > div > img {
+    width: 100%;
+    height: 45%;
+  }
+  .content-div {
+    width: 100%;
+    height: 20%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .prices-div {
+    display: flex;
+    height: 10%;
+    justify-content: space-around;
+    vertical-align: top;
+    line-height: 2px;
+    font-weight: bold;
+  }
+  .old-price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+  .rating {
+    display: flex;
+    justify-content: center;
+    color: #e29c2b;
+    line-height: 1px;
+  }
+  #add-cart {
+    width: 85%;
+    height: 7%;
+    border: 1px solid black;
+    background-color: #e78471;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+  }
+}

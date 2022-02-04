@@ -1,0 +1,62 @@
+<%- include("_header", {title: "Account - Vedix",
+cssLink:"/css/customers/login.css"})%>
+<body>
+  <div id="vedixLogo">
+    <a href="/"
+      ><img src="./css/customers/images/vedix_logo.svg" alt="image"
+    /></a>
+  </div>
+  <div id="loginForm">
+    <h2>
+      Log In
+    </h2>
+
+    <div id="alertMsg"><%= err%></div>
+
+    <form action="/login" method="post">
+      <label for="email"></label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Email"
+        required
+      />
+      <label for="password"></label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        placeholder="Password"
+        required
+      />
+      <input type="submit" value="Sign In" />
+    </form>
+    <div id="newUserAndForgetPassword">
+      <div>
+        <a href="./register">New User?</a>
+      </div>
+      <div>
+        <a href="./forgetPassword.html">Forgot Password?</a>
+      </div>
+    </div>
+    <div id="orPart">
+      <div></div>
+      <div>OR</div>
+      <div></div>
+    </div>
+    <p id="continueWith">Continue With</p>
+    <div id="iconsSignup">
+      <div>
+        <a href="https://www.facebook.com/"
+          ><img src="./css/customers/images/fb_logo.png" alt="image"
+        /></a>
+      </div>
+      <div>
+        <a href="./auth/google"
+          ><img src="./css/customers/images/google_logo.png" alt="image"
+        /></a>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Vedix</title>
+    <link rel="stylesheet" href="css/cart/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="navigation">
+        <div class="brand-icon">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376"
+            alt=""
+            onclick='window.location.href="/"'
+          />
+        </div>
+
+        <div id="filterSection">
+          <div class="know-your-sh nav">Know Your hair</div>
+          <div class="know-your-sh nav" onclick='window.location.href="/quiz1"'>
+            Know Your Skin
+          </div>
+
+          <div
+            class="cart-log-icons"
+            onclick='window.location.href="./register"'
+          >
+            <i class="fa fa-lock" style="font-size: 22px;"></i>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <h2>Your Cart</h2>
+
+        <div class="your-cart">
+          <div id="items"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <div id="billing">
+        <h1 id="total-bill"></h1>
+        <button id="check-out" onclick='window.location.href="/checkout"'>
+          Check out
+        </button>
+      </div>
+      <a href="/product" target="_blanck">continue Shopping >></a>
+    </div>
+  </body>
+</html>
+<script src="js/cart.js"></script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Products - Vedix</title>
+
+    <link href="css/products/products.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navigation">
+      <div class="brand-icon">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/logo.svg?v=1585630376"
+          alt=""
+          onclick='window.location.href="/"'
+        />
+      </div>
+
+      <div id="filterSection">
+        <div class="know-your-sh nav">Know Your hair</div>
+        <div class="know-your-sh nav" onclick='window.location.href="/quiz1"'>
+          Know Your Skin
+        </div>
+
+        <div class="cart-log-icons">
+          <i
+            class="fa fa-shopping-cart"
+            style="font-size: 22px;"
+            onclick="window.open('./cart')"
+          ></i>
+        </div>
+
+        <div class="cart-log-icons" onclick='window.location.href="./register"'>
+          <i class="fa fa-lock" style="font-size: 22px;"></i>
+        </div>
+      </div>
+    </div>
+    <h2>All Products</h2>
+    <div class="top-banner">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0037/7690/5283/files/CUSTOMISED-REGIMENS-for-men-_-women.jpg?v=1635417626"
+        alt=""
+      />
+    </div>
+    <div id="container">
+      <% products.map( (items, idx) => { %>
+      <div>
+        <img src="<%= items.image_url %>" />
+        <div class="content-div">
+          <p><%= items.title %></p>
+        </div>
+        <p class="rating">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </p>
+
+        <div class="prices-div">
+          <p><%= 'Rs. ' +items.offer_price %></p>
+          <p class="old-price"><%= 'Rs. '+items.price %></p>
+        </div>
+
+        <div id="add-cart" onclick="getData('<%= JSON.stringify(items) %>')">
+          Add to cart
+        </div>
+      </div>
+
+      <% }) %>
+    </div>
+  </body>
+</html>
+<script src="js/products.js"></script>
